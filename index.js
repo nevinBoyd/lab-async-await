@@ -8,6 +8,8 @@ function displayPosts(posts) {
 
     selectedPosts.push(...shuffled.slice(0, 5));
 
+    postList.innerHTML = "";
+
     selectedPosts.forEach(post => {
 
         const li = document.createElement("li");
